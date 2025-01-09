@@ -5,6 +5,9 @@
       
 
 }
+body {
+    touch-action: manipulation;
+}
 h1,h2{
    
   font-family: "DM Serif Text", serif;
@@ -57,7 +60,7 @@ width: 100%;
   }
 .container{
     height: 100vh;
-    width: 100%; /* Set to 100% to avoid overflow */
+    width: 100%; 
     display: flex;
     justify-content:  flex-start;
     align-items: center;
@@ -175,7 +178,7 @@ width: 100%;
 }
 .container3{
     height: 100vh;
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,8 +195,8 @@ width: 100%;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* Vertically center text */
-    align-items: center;      /* Horizontally center text */
+    justify-content: center;  
+    align-items: center;      
     text-align: center;
 }
 .techskill h2{
@@ -217,8 +220,8 @@ width: 100%;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* Vertically center text */
-    align-items: center;      /* Horizontally center text */
+    justify-content: center;  
+    align-items: center;     
     text-align: center;
 
 }
@@ -235,7 +238,7 @@ width: 100%;
 }
 .container4{
     height: 100vh;
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,7 +296,7 @@ color: rgb(49, 60, 71);
 /* Default (for larger screens like laptops) */
 @media (min-width: 768px) {
     .container {
-        flex-direction: row;  /* Image right, text left */
+        flex-direction: row;  
     }
 }
 
@@ -305,26 +308,26 @@ color: rgb(49, 60, 71);
         position: static;
     }
     #Hero{
-        overflow: auto; /* Prevent content overflow */
-position: relative; /* Ensure content is contained within Hero */
+        overflow: auto; 
+position: relative; 
     }
     .container{
-        flex-wrap: wrap; /* Allow content to wrap in smaller screens */
-        position: sticky; /* Ensures it stays within Hero section */
+        flex-wrap: wrap;
+        position: sticky; 
         flex-direction: column;
         height: auto;
-        width: 100%; /* Ensure the width doesn't overflow */
+        width: 100%;
         padding: 10px;
-        align-items: center;     /* Center them horizontally */
-        justify-content: center; /* Center vertically as well */
+        align-items: center;  
+        justify-content: center;
     }
      .container2, .container3 {
         flex-direction: column;
         height: auto;
-        width: 100%; /* Ensure the width doesn't overflow */
+        width: 100%; 
         padding: 10px;
-        align-items: center;     /* Center them horizontally */
-        justify-content: center; /* Center vertically as well */
+        align-items: center;     
+        justify-content: center; 
     }
  
 
